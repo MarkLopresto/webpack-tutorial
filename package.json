@@ -1,0 +1,25 @@
+{
+  "name": "webpack-intro",
+  "version": "1.0.0",
+  "description": "Repository for storing examples used in intro Webpack tutorial",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "del-cli dist -f",
+    "build": "webpack",
+    "execute": "node dist/bundle.js",
+    "start": "npm run build -s && npm run execute -s"
+  },
+  "author": "Mark Lopresto <info@spyderhausdesign.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "del-cli": "^0.2.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "#"
+  }
+}
